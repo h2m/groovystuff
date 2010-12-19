@@ -14,8 +14,10 @@ public class MyJavaClass{
 		LOG.debug("class initialised");
 	}
 	
-	public void doIt(){
-		LOG.info("did it");
+	public static void doIt(int i){
+		// MyScalaClass msc = new MyScalaClass(i);
+		String msc = "or without Scala " + i;
+		LOG.info("did it with: " + msc);
 	}
 
 }
