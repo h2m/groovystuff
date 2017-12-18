@@ -14,16 +14,8 @@ public class MyJavaClass {
         LOG.debug("class initialised");
     }
 
-    public static MyScalaClass doIt(int i) {
-        MyScalaClass msc = new MyScalaClass(i);
-        // String msc = "or without Scala " + i;
-        LOG.info("did it with: " + msc);
-        return msc;
-    }
-
-    public static void doItAgain(MyScalaClass msc) {
-        msc.inc(1);
-        LOG.info("did it again with: " + msc);
+    public int twice (int i){
+        return 2 * i;
     }
 
 }
